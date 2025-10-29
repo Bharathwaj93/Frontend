@@ -1,7 +1,7 @@
 <body>
 
 
-     
+     <title>DomManipulation</title>
     <h1 id="sample">This is sample manipulation content</h1>
     <button onclick="change()">Change Content</button>
     <p class="para">This is para</p>
@@ -14,7 +14,9 @@
     <input id="changeExample" placeholder="Type something" onkeyup="keyupExample()">
     <div id="divSample"></div>
     <button onclick="addIntoDivTag()">append</button>
-    
+    <button onclick=" getData()">getData</button>
+    <button onclick="postaData()">PostaData</button>
+    <button onclick="deleteaData()">Delete</button>
     
 
           <script>
@@ -56,26 +58,53 @@
              divcon.append(sa1);
         }
 
-         async function getData() {
-             try{
-                 let response=await fetch("https://dummyjson.com/users");
-                 let result= await response.json();
-               console.log=(result.users);
-             let data= result.users;
-             for(let i=0; i< data.length; i++){
-                let sample = data[i].bank.cardnumber;
-                console.log(sample);
-             }
-                
-             }catch (error){
-                console.log(error);
+       async function getData(){
+            try{
+                let response = await fetch("https://dummyjson.com/users");
+                let result = await response.json();
+                console.log(result.users);
+                let data = result.users;
+                for(let i=0; i< data.length; i++){
+                    let sample = data[i].bank.cardNumber;
+                    console.log(sample);
 
-             }
-             
-             
-            
-         }
+                     let sample1 = data[i].address.city;
+                    console.log(sample1);
+                }
+            }catch(error){
+                console.log(error);
+            }
+        }
+
+        let user = {
+            userId: 1,
+            id: 1,
+            title: "sample",
+            isActive: true
+        }
      
+        async function postaData(){
+            let a = 1;
+            let response = await fetch("https://jsonplaceholder.typicode.com/posts/1",{
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    "Accept": 'application/json'
+                },
+                body: JSON.stringify(user)            
+            
+            } );
+        }
+            async function deleteaData(){
+            let a = 1;
+            let response = await fetch("https://jsonplaceholder.typicode.com/posts/1",{
+                method: 'DELETE'           
+            
+            } );
+        }
+        
+             
+        
     </script>
  
 </body>
