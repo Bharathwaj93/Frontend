@@ -1,0 +1,96 @@
+body{
+
+    background-image: url('image.jpg');
+     
+    background-repeat: no-repeat;
+    /* background-color:rgb(62, 178, 137);  */
+    background-size: 1600px; 
+    display: flex;
+    justify-content: center;
+     align-items: center; 
+    /* justify-content: center; */
+    
+    
+   
+}
+
+button{
+    margin: 10px;
+    width: 122px;
+    border-color: rgb(95, 88, 88);
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+
+#addedup{
+    color: rgba(163, 60, 22 );
+    text-align: center;
+}
+
+.box{
+    border: 3px;
+    border-style:solid;
+
+}
+
+.text{
+    /* margin-left: 575px; */
+    border: 10px;
+    left-width: 400px;
+    right-width: 400px;
+    border-style:double;
+
+}
+
+
+.img-content{
+    display: flex;
+    flex-direction: row;
+    /* row-gap: 100px; */
+    align-items:center ;
+    justify-content: center;
+}
+
+.img-content img{
+    height: 200px;
+    width: 300px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* .box1{
+    border: 20px;
+    border-style: double; */
+
+.home{
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 20px;
+    width: 100vw;
+    /* margin-left: ; */
+}
+
+.home-text{
+    margin-left: 42%;
+}
