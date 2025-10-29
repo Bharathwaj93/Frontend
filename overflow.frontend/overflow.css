@@ -1,0 +1,41 @@
+.sampleoverflow{
+
+
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    overflow: auto;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: solid 2px;
+    display: inline-block;
+    /* display: inline-block; */
+    /* display: flex;
+    flex-direction: row;
+     */
+}
+
+a:hover{
+    font-size: 30px;
+    background-color: rgb(30, 204, 210);
+    color: rgb(0, 0, 0);
+    border: solid 1px;
+
+}
+
+a{
+    font-size: 20px;
+    color: aqua;
+}
+
+a:link{
+    color: #27bfd3;
+
+}
+a:visited{
+    color: #cd3b0f;
+}

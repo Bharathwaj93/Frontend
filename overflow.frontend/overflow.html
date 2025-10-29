@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="overflow.css">
+</head>
+<body>
+    <div class="sampleoverflow">
+        this is to test the overflow content when the content inside this div tag increase 
+        content insude  it should fit according to  the width and  height of the div tag and scroll
+        should be added depending on the content itself
+    </div>
+    <div class="box">sample1</div>
+    <div class="box">sample2</div>
+    <div class="box">sample3</div>
+
+    <div>
+        <a href="">home</a>
+    </div>
+    <script>
+        function samplefunction(){
+            console.log("working");
+
+
+        }
+
+        let a=20;
+        if(a===10){
+            console.log(" the content are matching ");
+        }
+        else if(a===20){
+            console.log("content are matching for 20");
+        }
+        else{
+            console.log("content are not matchig");
+
+        }
+
+        let day ="tuesday";
+
+        if(day=== "monday"){
+            console.log("this is monday");
+
+        }
+        else if(day === "tuesday"){
+            console.log("Hey this is Friday");
+        }else if(day === "thursday"){
+             console.log("The value matched this is Thursday");
+        }else if (day==="sonday"){
+            console.log(" this is nothing matched");  
+        }
+        else{
+            console.log("nothing matched");
+
+        }
+
+        switch(day) {
+            case "Monday":
+                console.log("This is Monday");
+                break;
+            case "Friday":
+                console.log("Hey this is Friday");
+                break;
+            case "Thursday":
+                console.log("The value matched this is Thursday");
+                break;
+            default:
+                console.log("nothing matched");            
+        }
+
+         let text = "Hi Everyone";
+        console.log( text.length);
+        console.log(text.toUpperCase());
+        console.log(text.toLowerCase());
+        console.log(text.startsWith("Hi"));
+        console.log(text.endsWith("Everyone"));
+        console.log(text.slice(0,2));
+        console.log(text.replace("Hi", "Hello"));
+        console.log(text.trim());
+        console.log(text.charAt(1));
+
+        for(let i=0; i<=5; i++){
+            console.log("The for loop result is", i);
+        }
+
+        let arr = [0, 3,4,10];
+        for(let i = 0; i<arr.length; i++){
+            console.log(arr[i]);
+        }
+
+        for(let i of arr){
+            console.log("The of example for loop", i);
+
+        }
+
+        let sample = ["This", "is", "Example", "String", "loop"];
+        for (let tex of sample){
+            console.log(tex);
+        }
+
+        let person = {name: "vignesh", status: "Active"};
+
+        for(let key in person){
+            console.log(person[key]);
+        }
+        
+
+
+
+    </script>
+</body>
+</html>
