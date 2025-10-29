@@ -1,0 +1,68 @@
+h1{
+    /* color: aquamarine; */
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    width: 358px;
+    z-index: 13;
+}
+
+
+.samplediv{
+    /* position: absolute; */
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    /* top: 200px; */
+    /* left: 200px; */
+}
+
+.divone{
+    position: absolute;
+    width:280px ;
+    z-index: 7;
+    background-color: aqua;
+}
+
+.divtwo{
+    position: absolute;
+    width: 350px;
+    top: 20px;
+    background-color: indianred;
+    z-index: 8;
+}
+
+.divthree{
+    position: absolute;
+    width: 400px;
+    height: 140px;
+    top: 40px;
+
+     background-color: chartreuse;
+     z-index:8;
+
+}
+
+.divfour{
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    top: 180px;
+    background-color: brown;
+    z-index: 6;
+}
+
+.divfive{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 300px;
+    background-color: blue;
+    z-index: 11;
+}
+
+.sampleimg{
+    width: 200px;
+    height: 100px;
+    float: right;
+}
