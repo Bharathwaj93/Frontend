@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <h1>text to voice</h1>
+    <input type="text" placeholder="enter the text" id="text"/>
+    <br/>
+    <button onclick="speak()">speak</button>
+    </div>
+
+    <style>
+        .container{
+
+        
+
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+        function speak(){
+            const input =document.getElementById('text').value;
+            const utterance = new SpeechSynthesisUtterance(input);
+            speechSynthesis.speak(utterance);
+
+        }
+    </script>
+</body>
+</html>
