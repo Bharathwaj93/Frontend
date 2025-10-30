@@ -43,7 +43,7 @@ header{
     display: flex;
     flex-direction: column;
     height: 500px;
-    width: 300px;
+    width: 400px;
     border: 1px solid black;
     align-items:center;
     margin: auto;
